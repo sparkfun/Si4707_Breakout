@@ -152,6 +152,7 @@
 <text x="19.05" y="1.524" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 <text x="21.59" y="1.524" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">3.3V</text>
 <text x="22.987" y="18.542" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
+<wire x1="3.81" y1="10.16" x2="3.81" y2="11.049" width="0.3048" layer="30"/>
 </plain>
 <libraries>
 <library name="SparkFun-RF">
