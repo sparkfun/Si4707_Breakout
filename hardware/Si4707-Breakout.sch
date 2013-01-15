@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9468,6 +9468,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="10.7163" y="0.9449"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="MICRO-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO1">
@@ -9476,6 +9490,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="0" size="1.9304" layer="94">SFE</text>
+</symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9512,6 +9531,35 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </technologies>
 </device>
 <device name="SM" package="SFE-NEW-WEB-SOLDERMASK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="JP">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9592,6 +9640,8 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="JP5" library="SparkFun" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 </parts>
 <sheets>
 <sheet>
@@ -9718,6 +9768,8 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <instance part="JP3" gate="G$1" x="233.68" y="104.14" rot="R180"/>
 <instance part="GND6" gate="1" x="223.52" y="93.98"/>
 <instance part="GND13" gate="1" x="223.52" y="137.16"/>
+<instance part="JP4" gate="G$1" x="241.3" y="30.48"/>
+<instance part="JP5" gate="G$1" x="241.3" y="25.4"/>
 </instances>
 <busses>
 </busses>
