@@ -89,7 +89,7 @@ void setup()
   // After initializing, we can tune to a WB frequency. Use the
   //  setWBFrequency() function to tune to a frequency. The frequency 
   //  parameter given to the function should be your chosen frequency in
-  //  kHz. So to tune to 162.55 MHz, send 1625500. The tuneFrequency
+  //  kHz. So to tune to 162.55 MHz, send 162550. The tuneFrequency
   //  variable is defined globablly near the top of this sketch.
   if (setWBFrequency(tuneFrequency))
   {
@@ -140,23 +140,25 @@ void loop()
     break;
   case 'f':
     Serial.print("Frequency = ");
+    // getWBFrequency() returns the 2-byte frequency code sent
+    // to the Si4707. To get a real-looking freq, multiply by .0025
     Serial.print((float) getWBFrequency() * 0.0025, 4);
     Serial.println(" MHz");
     break;
   case 'm':
-    setMuteVolume(1);
+    setMuteVolume(1);  // Turn mute on
     break;
   case 'M':
-    setMuteVolume(0);
+    setMuteVolume(0);  // Turn mute off
     break;
   case '+':
-    setVolume(++rxVolume);
+    setVolume(++rxVolume); // increment volume
     break;
   case '-':
-    setVolume(--rxVolume);
+    setVolume(--rxVolume); // decrement volume
     break;
   case 'h':
-    printMenu();
+    printMenu(); // print the help menu
   }
 }
 
