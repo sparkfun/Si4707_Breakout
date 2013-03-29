@@ -1,10 +1,8 @@
-This is a repository for the SparkFun Si4707 Breakout Board and example code.
+Si4707 Weather Band Radio Receiver
+==================================
 
-	Picuture of the board goes here
-
----
-
-## Si4707 Weather Band Radio Receiver
+[![Si4707 Weather Band Radio Breakout](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/1/2/9/11129-01_medium.jpg)  
+*Si4707 Weather Band Radio Breakout (WRL-11129)*](https://www.sparkfun.com/products/11129)
 
 The Si4707 IC is the industry's first weather band (WB) radio receiver to include a specific area message encoding (SAME) processor. 
 
@@ -18,12 +16,14 @@ Features:
 * Programmable reference clock
 * 2.7 to 5.5 V supply voltage
 
----
+Repository Contents
+-------------------
 
-# What's here?
+* **/hardware** - PCB design files (created with version 6.2.0 of Eagle)
+* **/firmware** - Arduino example sketch
 
-*hardware*: This directory contains the Eagle design files - the breakout PCB and schematic design. These files were created with version 6.2.0 of Eagle Cad - a lite version is available, for free, at [www.cadsoftusa.com](www.cadsoftusa.com).
+License Information
+-------------------
 
-* Jim Lindblom<br>
-SparkFun Electronics<br>
-January 14, 2013
+The hardware is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
+All other code is open source hardware so please feel free to do anything you want with it; you buy me a beer if you u
