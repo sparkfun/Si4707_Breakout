@@ -21,6 +21,7 @@ Repository Contents
 
 * **/hardware** - PCB design files (created with version 6.2.0 of Eagle)
 * **/firmware** - Arduino example sketch
+* [Wiki](https://github.com/sparkfun/Si4707_Breakout/wiki) - Be sure to check out the [hardware support](https://github.com/sparkfun/Si4707_Breakout/wiki/Si4707-Breakout-Hardware-Support) page for more information on using the Si4707 breakout board.
 
 License Information
 -------------------
