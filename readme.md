@@ -1,7 +1,7 @@
 SparkFun Si4707 Weather Band Radio Receiver
 ==================================
 
-![SparkFun Si4707 Weather Band Radio Breakout](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/1/2/9/11129-01_medium.jpg)  
+![SparkFun Si4707 Weather Band Radio Breakout](https://cdn.sparkfun.com/assets/parts/6/5/8/4/11129-01.jpg)  
 
 [*SparkFun Si4707 Weather Band Radio Breakout (WRL-11129)*](https://www.sparkfun.com/products/11129)
 
